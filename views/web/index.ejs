@@ -1,0 +1,1147 @@
+﻿<%- include ('partials/header.ejs') %>
+
+<style>
+    .slide {
+        background-image: url("/web/assets/slide/slide-1.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+
+
+
+<div class="app-landing-wrap landing_wrap">
+
+    <div id="landing_wrap" class="landing-purple">
+
+
+        <!--=============== Header start ================-->
+
+
+        <!--=============== Header End ================-->
+
+
+        <!-- ============ Main content start ============= -->
+        <div class="main-content-wrap">
+
+            <!-- intro-section -->
+
+            <section class="banner slide" style="height: 531px; ">
+                <div class="o-home-hero">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-6 intro-ten-LeftSection pb-3" style="border-right: 1px solid #3B4E63">
+
+
+                            </div>
+
+
+                            <div class="col-md-6 mt-5">
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+            <!-- start-features -->
+
+
+            <section id="features-wrap" class="features_wrap p-t-b-80 section-grid borderbt"
+                style="background: linear-gradient( 135deg , #0063B2FF 0%, #071c36 100%);">
+                <img src="/web/icon/left-top-pattern.png" alt="" style="margin-top: -5em">
+                <div class="container" style="margin-top: -10em;">
+                    <div class="row">
+                        <div class="col-md-12 intro-ten-LeftSection pb-3">
+                            <h1 class="font-weight-bold text-white text-42 mb-3 t-shadow text-center mb-5">
+
+                                We use custom teams to help agencies and
+                                businesses scale their development, design, and
+                                digital marketing capabilities
+                            </h1>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="overlay">
+
+
+                </div>
+
+
+            </section>
+
+            <!--grid section-->
+            <div class="container">
+                <div class="row mb-5" style="margin-top: -7em">
+
+
+                    <% for( let i = 0; i < service.length; i++ ) { %>
+
+
+
+                    <div data-aos="" class="col-md-2 col-sm-6 mb-4">
+                        <a href="">
+                            <div class="card grid-gr">
+
+                                <div class="card-body pt-4 pb-4 text-center">
+                                    <div class="mb-3">
+                                        <img src="/uploads/services/<%= service[i].image %>" alt="" width="65"></div>
+                                    <div class="mt-3">
+                                        <h4 class="card-title pt-2 font-weight-700"><%= service[i].category %></h4>
+
+                                        <i class="fa fa-arrow-circle-right"
+                                            style="font-size:30px;color:#343A58;margin-top:20px"></i>
+                                        <!-- <i class="eva eva-arrow-circle-right text-36 " style="background:#343A58; border-radius:50px; content:\ea0f;"></i> -->
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <% } %>
+
+
+                    <!-- <div data-aos="" class="col-md-2 col-sm-6 mb-4">
+                        <a href="">
+                            <div class="card grid-gr">
+
+                                <div class="card-body pt-4 pb-4 text-center">
+                                    <div class="mb-3">
+                                        <img src="/web/icon/Icon-2.svg" alt="" width="65"></div>
+                                    <div class="mt-3">
+                                        <h4 class="card-title pt-2 font-weight-700">MLM</h4>
+                                        <i class="fa fa-arrow-circle-right"
+                                            style="font-size:30px;color:#343A58;margin-top:20px"></i>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+
+                    <!-- <div data-aos="" class="col-md-2 col-sm-6 mb-4">
+                        <a href="">
+                            <div class="card grid-gr">
+
+                                <div class="card-body pt-4 pb-4 text-center">
+                                    <div class="mb-3">
+                                        <img src="/web/icon/Icon-4.svg" alt="" width="65"></div>
+                                    <div class="mt-3">
+                                        <h4 class="card-title pt-2 font-weight-700">Cripto</h4>
+                                        <i class="fa fa-arrow-circle-right"
+                                            style="font-size:30px;color:#343A58;margin-top:20px"></i>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+
+
+
+                    <!-- <div data-aos="" class="col-md-2 col-sm-6 mb-4">
+                        <a href="">
+                            <div class="card grid-gr">
+
+                                <div class="card-body pt-4 pb-4 text-center">
+                                    <div class="mb-3">
+                                        <img src="/web/icon/Graphics.svg" alt="" width="65"></div>
+                                    <div class="mt-3">
+                                        <h4 class="card-title pt-2 font-weight-700">Graphic</h4>
+                                        <i class="fa fa-arrow-circle-right"
+                                            style="font-size:30px;color:#343A58;margin-top:20px"></i>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+
+
+
+                    <!-- <div data-aos="" class="col-md-2 col-sm-6 mb-4">
+                        <a href="">
+                            <div class="card grid-gr">
+
+                                <div class="card-body pt-4 pb-4 text-center">
+                                    <div class="mb-3">
+                                        <img src="/web/icon/E-Commerce.svg" alt="" width="75"></div>
+                                    <div class="mt-3">
+                                        <h4 class="card-title pt-2 font-weight-700">Desktop Software</h4>
+                                        <i class="fa fa-arrow-circle-right" style="font-size:30px;color:#343A58;"></i>
+                                     
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-12 col-sm-6 mb-5 text-center" style="margin-top: -2em;">
+                        <a href="" class="ahref font-weight-700 text-20 mb-4"> View Services </a>
+                        <!--                        <button class="btn btn-lg btn-outline-info m-3 w-auto"><b>View All Services</b>-->
+                        <!--                        </button>-->
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- end-features -->
+
+
+            <section id="features-wrap1" class="features_wrap p-t-b-80 section-grid borderbt"
+                style="background: linear-gradient( 135deg , #0063B2FF 0%, #071c36 100%);">
+                <div align="right" style="margin-top: -5em"><img src="icon/right-top-pattern.png" alt=""></div>
+                <div class="container" style="margin-top: -10em;">
+                    <div class="row">
+                        <div class="col-md-12 intro-ten-LeftSection pb-3">
+                            <h1 class="font-weight-bold text-white text-42 mb-3 t-shadow text-center ">
+                                Technologies
+                            </h1>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="overlay">
+
+
+                </div>
+
+
+            </section>
+
+            <!--grid section-->
+            <div class="container">
+                <div class="row mb-5" style="margin-top: -7em">
+
+                    <% technologies.forEach(technologies => { %>
+
+
+                    <div data-aos="" class="col-md-2 col-sm-6 mb-4">
+                        <a href="">
+                            <div class="card full-grid-01 full-grid text-shaw">
+
+                                <div class="card-body pt-4 pb-4 text-center">
+                                    <div class="mb-3  ">
+                                        <img src="/uploads/technologies/<%= technologies.icon %>" alt="">
+                                    </div>
+                                    <div class="mt-3 clr-white ">
+                                        <h4 class="card-title pt-2 font-weight-700 text-black ">
+                                            <%= technologies.category %></h4>
+                                        <i class="fa fa-arrow-circle-right" style="font-size:30px;color:#343A58;"></i>
+                                        <!-- <i class="eva eva-arrow-circle-right text-36  "></i> -->
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <% }) %>
+                    <!-- <div data-aos="" class="col-md-2 col-sm-6 mb-4">
+                        <a href="">
+                            <div class="card full-grid text-shaw">
+
+                                <div class="card-body pt-4 pb-4 text-center">
+                                    <div class="mb-3">
+                                        <img src="/web/icon/frontend.svg" alt="">
+                                    </div>
+                                    <div class="mt-3">
+                                        <h4 class="card-title pt-2 font-weight-700 clr-h4">Front-end</h4>
+                                        <i class="fa fa-arrow-circle-right" style="font-size:30px;color:#343A58;"></i>
+                                     
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="" class="col-md-2 col-sm-6 mb-4">
+                        <a href="">
+                            <div class="card full-grid text-shaw">
+
+                                <div class="card-body pt-4 pb-4 text-center">
+                                    <div class="mb-3">
+                                        <img src="/web/icon/server%20%281%29.svg" alt="">
+                                    </div>
+                                    <div class="mt-3">
+                                        <h4 class="card-title pt-2 font-weight-700 clr-h4">Server</h4>
+                                        <i class="fa fa-arrow-circle-right" style="font-size:30px;color:#343A58;"></i>
+                                    
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="" class="col-md-2 col-sm-6 mb-4">
+                        <a href="">
+                            <div class="card full-grid text-shaw">
+
+                                <div class="card-body pt-4 pb-4 text-center">
+                                    <div class="mb-3">
+                                        <img src="/web/icon/Icon-5.svg" alt="">
+                                    </div>
+                                    <div class="mt-3">
+                                        <h4 class="card-title pt-2 font-weight-700 clr-h4">Mobile</h4>
+                                        <i class="fa fa-arrow-circle-right" style="font-size:30px;color:#343A58;"></i>
+                           
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="" class="col-md-2 col-sm-6 mb-4">
+                        <a href="">
+                            <div class="card full-grid text-shaw">
+
+                                <div class="card-body pt-4 pb-4 text-center">
+                                    <div class="mb-3">
+                                        <img src="/web/icon/E-Commerce.svg" alt="">
+                                    </div>
+                                    <div class="mt-3">
+                                        <h4 class="card-title pt-2 font-weight-700 clr-h4">E-commerce</h4>
+                                        <i class="fa fa-arrow-circle-right" style="font-size:30px;color:#343A58;"></i>
+                                      
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="" class="col-md-2 col-sm-6 mb-4">
+                        <a href="">
+                            <div class="card full-grid text-shaw">
+
+                                <div class="card-body pt-4 pb-4 text-center">
+                                    <div class="mb-3">
+                                        <img src="/web/icon/CRM.svg" class="w-50" alt="">
+                                    </div>
+                                    <div class="mt-3">
+                                        <h4 class="card-title pt-2 font-weight-700 clr-h4">CRM</h4>
+                                        <i class="fa fa-arrow-circle-right" style="font-size:30px;color:#343A58;"></i>
+                                 
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-12 col-sm-6 mb-5 text-center" style="margin-top: -2em;">
+                        <a href="" class="ahref font-weight-700 text-20 mb-4"> View Technologies </a>
+                        <!--                        <button class="btn btn-lg btn-outline-info m-3 w-auto"><b>View All Services</b>-->
+                        <!--                        </button>-->
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!--grid section end-->
+
+            <!--portfolio slider-->
+            <section class="left-image-wrap p-t-b-80 slider-img borderbt ">
+                <img src="/web/icon/left-top-pattern.png" alt="" style="margin-top: -5em">
+                <div class="container">
+                    <div class="row" style="margin-top: -11em">
+                        <div class="col-md-12 section-header mb-5">
+                            <h2 class="font-weight-bold text-white text-42 mb-3 t-shadow text-center">Some Of Our Works
+                            </h2>
+
+
+                        </div>
+                        <div class="col-md-12 col-sm-12 mb-5 mb-lg-0 mb-md-0 mt-mb-5">
+
+
+                            <div class="left-image-carousel">
+
+                                <% ourwork.forEach(i => { %>
+                                <div>
+                                     
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img alt="Card image cap" class="img-responsive w-100 mb-4"
+                                                src="/uploads/Our_work/<%- i.image %>">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card">
+
+                                                <div class="card-body pt-3 pb-3">
+
+                                                    <h4 class="card-title font-weight-bold"><%= i.heading %> 
+                                                    </h4>
+                                                    <p class="m-0"><%= i.paragraph %></p>
+
+
+                                                </div>
+                                                <div class="card-body pt-3 pb-3">
+
+                                                    <h4 class="card-title font-weight-bold"><%= i.heading1 %> </h4>
+                                                    <p class="m-0"><%= i.paragraph1 %></p>
+
+
+                                                </div>
+                                                <div class="card-body pt-3 pb-3">
+
+                                                    <h4 class="card-title font-weight-bold"><%= i.heading2 %> </h4>
+                                                    <p class="m-0"><%= i.paragraph2 %></p>
+
+
+                                                </div>
+                                                <div class="card-body pt-3 pb-3">
+
+                                                    <h4 class="card-title font-weight-bold"><%= i.heading3 %> </h4>
+                                                    <p class="m-0"><%= i.paragraph3 %></p>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <% }) %>
+                            </div>
+                            <div class="slick_control_wrap text-center mt-3">
+
+
+                                <button type="button"
+                                    class="ngu_control_button half-button leftRs btn btn-circle btn-white btn-shadow">
+                                    <i class="eva eva-chevron-left-outline"></i></button>
+                                <button type="button"
+                                    class="ngu_control_button half-button rightRs btn btn-circle btn-white btn-shadow">
+                                    <i class="eva eva-chevron-right-outline"></i></button>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </section>
+            <!--portfolio slider end-->
+
+            <!--  why choose us-->
+            <section id="news-wrap" class="news-two-wrapp-t-b-80 " style="background-color: #14DF7D">
+                <div class="container">
+
+
+                    <div class="row">
+
+
+                        <div data-aos=" " class="col-md-5 col-sm-12" style="margin-right: -2em">
+                            <div class="gcard text-left o-hidden br-light">
+
+                                <div class="col-md-12 p-5">
+                                    <div class=" ">
+                                        <h2 class="font-weight-900 text-left text-white text-42  ">Why Choose</h2> <br>
+
+
+                                        <h2 class="font-weight-900 text-white text-48 vss">SERENITY SYSTEM ?</h2>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <div data-aos=" " class="col-md-7 col-sm-12">
+                            <div class="gcard text-left o-hidden br-blue">
+
+                                <div class="col-md-12 p-5">
+                                    <div class=" ">
+
+
+                                        <p class="  text-left text-white    ">
+                                            We use custom teams to help agencies
+                                            and businesses scale their
+                                            development, design, and digital
+                                            marketing capabilities
+                                        </p> <br>
+
+
+                                        <div class="col-md-12 col-sm-6" align="center">
+                                            <button
+                                                class="btn btn-lg btn-outline-danger orange-clr m-3 w-auto text-center  ">
+                                                <b>SCHEDULE TIME TO TALK</b></button>
+                                        </div>
+
+
+
+
+                                        <!--                                        <a href="" class="text-white  ">-->
+                                        <!--                                            <p>-->
+                                        <!--                                                Get guaranteed response within 8 Hrs.-->
+                                        <!--                                            </p>-->
+                                        <!--                                        </a>-->
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!--  why choose us end-->
+
+
+
+            <!-- start::team -->
+            <section id="teams-wrap" class="team-wrap p-t-b-80 light-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 section-header mb-5">
+                            <h2 class="font-weight-bold">Meet our Team</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ea quam
+                                laborum,
+                                ducimus, laboriosam sint dolorum aspernatur libero.</p>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <% ourteam.forEach(ourteam => { %>
+
+
+                        <div data-aos="fade-up" class="col-md-6 col-lg-3 col-sm-6 mb-lg-0 mb-4">
+                            <div class="card card-profile-1">
+                                <div class="card-body text-center">
+                                    <div class="avatar box-shadow-2 mb-3">
+                                        <img src="/uploads/ourteam/<%= ourteam.image %>" alt="">
+                                    </div>
+                                    <h5 class="font-weight-medium card-title m-0"><%= ourteam.name %></h5>
+                                    <p class="mt-0">QA Tester</p>
+                                    <p><%= ourteam.designation %></p>
+                                    <button class="btn half-button btn-gradient">Contact Jassica</button>
+                                    <div class="card-socials-simple mt-4">
+
+
+                                        <a class="text-20 mr-2" href="<%= ourteam.facebook %>"><i
+                                                class="eva eva-facebook facebook"></i></a>
+
+
+                                        <a class="text-20 mr-2" href="<%= ourteam.facebook %>"><i
+                                                class="eva eva-twitter twitter"></i></a>
+
+                                        <a class="text-20 mr-2" href="<%= ourteam.linkedin %>"><i
+                                                class="eva eva-linkedin linkedin"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of col -->
+                        <% }) %>
+
+                        <!-- end of col -->
+                    </div>
+                </div>
+            </section>
+            <!-- end::team -->
+
+
+            <!-- start::testimonial -->
+            <section id="testimonials-wrap" class="testimonial-caurosel-wrap p-t-b-80">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-header col-md-12 mb-5">
+                            <h2 class="font-weight-bold">What our customers says</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ea quam
+                                laborum,
+                                ducimus, laboriosam sint dolorum aspernatur libero.</p>
+                        </div>
+                        <div class="col-md-12">
+
+                            <div data-aos="fade-up" class="slick-testimonial-carousel-wrap">
+
+                                <!-- start carousel item -->
+                                <% for( let i = 0; i < customerReview.length; i++ ) { %>
+
+
+                                <div class="card mb-4 p-3 single-testimonial-wrap">
+
+                                    <div class="card-body text-left">
+
+
+                                        <p class="mb-4"><%= customerReview[i].designation %> </p>
+
+
+                                        <div class="test-user-details text-left abs">
+                                            <div class="user-img w-20 float-left mr-1">
+                                                <img src="/uploads/customerReview/<%= customerReview[i].image %>"
+                                                    class="rounded-circle" alt="User img">
+                                            </div>
+                                            <span
+                                                class="user-name font-weight-bold mt-1 w-75 float-right"><%= customerReview[i].name %>
+                                            </span>
+                                            <span
+                                                class="user-designation w-75 float-right"><%= customerReview[i].description %>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <% } %>
+                                <!-- end carousel item -->
+                                <!-- start carousel item -->
+                                <!-- <div class="card mb-4 p-3 single-testimonial-wrap">
+
+                                    <div class="card-body text-left">
+
+
+                                        <p class="mb-4">Adipisci quas repellat sed. Quasi quaerat aut nam
+                                            possimus
+                                            vitae dignissimos, sapiente est atque tenetur</p>
+
+
+                                        <div class="test-user-details text-left abs">
+                                            <div class="user-img w-20 float-left mr-1">
+                                                <img src="/web/assets/images/landing/faces/2.jpg" class="rounded-circle"
+                                                    alt="">
+                                            </div>
+                                            <span class="user-name font-weight-bold mt-1 w-75 float-right">Alex
+                                                Dan</span>
+                                            <span class="user-designation w-75 float-right">Creative
+                                                Manager</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- end carousel item -->
+                                <!-- start carousel item -->
+                                <!-- <div class="card mb-4 p-3 single-testimonial-wrap">
+
+                                    <div class="card-body">
+
+
+                                        <p class="mb-4">Adipisci quas repellat sed. Quasi quaerat aut nam
+                                            possimus
+                                            vitae dignissimos, sapiente est atque tenetur</p>
+
+
+                                        <div class="test-user-details text-left abs">
+                                            <div class="user-img w-20 float-left mr-1">
+                                                <img src="/web/assets/images/landing/faces/3.jpg" class="rounded-circle"
+                                                    alt="">
+                                            </div>
+                                            <span class="user-name font-weight-bold mt-1 w-75 float-right">Smith
+                                                Doe</span>
+                                            <span class="user-designation w-75 float-right">Assistant
+                                                Director</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- end carousel item -->
+                                <!-- start carousel item -->
+                                <!-- <div class="card mb-4 p-3 single-testimonial-wrap">
+
+                                    <div class="card-body">
+
+
+                                        <p class="mb-4">Adipisci quas repellat sed. Quasi quaerat aut nam
+                                            possimus
+                                            vitae dignissimos, sapiente est atque tenetur</p>
+
+
+                                        <div class="test-user-details text-left abs">
+                                            <div class="user-img w-20 float-left mr-1">
+                                                <img src="/web/assets/images/landing/faces/5.jpg" class="rounded-circle"
+                                                    alt="">
+                                            </div>
+                                            <span class="user-name font-weight-bold mt-1 w-75 float-right">Micheal
+                                                Clark</span>
+                                            <span class="user-designation w-75 float-right">Marketing
+                                                Manager</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- end carousel item -->
+                                <!-- start carousel item -->
+                                <!-- <div class="card mb-4 p-3 single-testimonial-wrap">
+
+                                    <div class="card-body">
+
+
+                                        <p class="mb-4">Adipisci quas repellat sed. Quasi quaerat aut nam
+                                            possimus
+                                            vitae dignissimos, sapiente est atque tenetur</p>
+
+
+                                        <div class="test-user-details text-left abs">
+                                            <div class="user-img w-20 float-left mr-1">
+                                                <img src="/web/assets/images/landing/faces/12.jpg" class="rounded-circle"
+                                                    alt="">
+                                            </div>
+                                            <span class="user-name font-weight-bold mt-1 w-75 float-right">Jassica
+                                                June</span>
+                                            <span class="user-designation w-75 float-right">Frontend
+                                                Developer</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- end carousel item -->
+                                <!-- start carousel item -->
+                                <!-- <div class="card mb-4 p-3 single-testimonial-wrap">
+
+                                    <div class="card-body">
+
+
+                                        <p class="mb-4">Adipisci quas repellat sed. Quasi quaerat aut nam
+                                            possimus
+                                            vitae dignissimos, sapiente est atque tenetur</p>
+
+
+                                        <div class="test-user-details text-left abs">
+                                            <div class="user-img w-20 float-left mr-1">
+                                                <img src="/web/assets/images/landing/faces/13.jpg" class="rounded-circle"
+                                                    alt="">
+                                            </div>
+                                            <span class="user-name font-weight-bold mt-1 w-75 float-right">Gray
+                                                Simon</span>
+                                            <span class="user-designation w-75 float-right">Production
+                                                Leader</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- end carousel item -->
+                                <!-- start carousel item -->
+                                <!-- <div class="card mb-4 p-3 single-testimonial-wrap">
+
+                                    <div class="card-body text-left">
+
+
+                                        <p class="mb-4">Adipisci quas repellat sed. Quasi quaerat aut nam
+                                            possimus
+                                            vitae dignissimos, sapiente est atque tenetur</p>
+
+
+                                        <div class="test-user-details text-left abs">
+                                            <div class="user-img w-20 float-left mr-1">
+                                                <img src="/web/assets/images/landing/faces/15.jpg" class="rounded-circle"
+                                                    alt="User img">
+                                            </div>
+                                            <span class="user-name font-weight-bold mt-1 w-75 float-right">Jhone
+                                                Doe</span>
+                                            <span class="user-designation w-75 float-right">Product
+                                                Manager</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- end carousel item -->
+                                <!-- start carousel item -->
+                                <!-- <div class="card mb-4 p-3 single-testimonial-wrap">
+
+                                    <div class="card-body text-left">
+
+
+                                        <p class="mb-4">Adipisci quas repellat sed. Quasi quaerat aut nam
+                                            possimus
+                                            vitae dignissimos, sapiente est atque tenetur</p>
+
+
+                                        <div class="test-user-details text-left abs">
+                                            <div class="user-img w-20 float-left mr-1">
+                                                <img src="/web/assets/images/landing/faces/15.jpg" class="rounded-circle"
+                                                    alt="User img">
+                                            </div>
+                                            <span class="user-name font-weight-bold mt-1 w-75 float-right">Jhone
+                                                Doe</span>
+                                            <span class="user-designation w-75 float-right">Product
+                                                Manager</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- end carousel item -->
+                                <!-- start carousel item -->
+                                <!-- <div class="card mb-4 p-3 single-testimonial-wrap">
+
+                                    <div class="card-body text-left">
+
+
+                                        <p class="mb-4">Adipisci quas repellat sed. Quasi quaerat aut nam
+                                            possimus
+                                            vitae dignissimos, sapiente est atque tenetur</p>
+
+
+                                        <div class="test-user-details text-left abs">
+                                            <div class="user-img w-20 float-left mr-1">
+                                                <img src="/web/assets/images/landing/faces/10.jpg" class="rounded-circle"
+                                                    alt="User img">
+                                            </div>
+                                            <span class="user-name font-weight-bold mt-1 w-75 float-right">Holder
+                                                Doe</span>
+                                            <span class="user-designation w-75 float-right">Product
+                                                Manager</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- end carousel item -->
+                            </div>
+                            <!-- end of slider wrap-->
+                            <div class="slick_control_wrap text-center">
+
+
+                                <button data-aos="fade-right" type="button"
+                                    class="ngu_control_button half-button testimonial-arrow-left leftRs btn btn-circle btn-white btn-shadow">
+                                    <i class="eva eva-chevron-left-outline"></i></button>
+                                <button data-aos="fade-left" type="button"
+                                    class="ngu_control_button half-button testimonial-arrow-right rightRs btn btn-circle btn-white btn-shadow">
+                                    <i class="eva eva-chevron-right-outline"></i></button>
+                            </div>
+                            <!-- end of slider button -->
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- end::testimonial -->
+
+
+            <!-- blog -->
+            <!--            <section id="news-wrap" class="news-two-wrap light-gray p-t-b-80">-->
+            <!--                <div class="container">-->
+            <!--                    <div class="row">-->
+            <!--                        <div class="col-md-12 section-header mb-5">-->
+            <!--                            <h2 class="font-weight-bold">Recent News From Blog</h2>-->
+            <!--                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ea quam-->
+            <!--                                laborum,-->
+            <!--                                ducimus, laboriosam sint dolorum aspernatur libero.</p>-->
+
+            <!--                        </div>-->
+            <!--                    </div>-->
+
+            <!--                    <div class="row">-->
+            <!--                        <div data-aos="fade-right" class="col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-4">-->
+            <!--                            <div class="card text-left o-hidden">-->
+            <!--                                <div class="card_img_left w-40 float-left">-->
+            <!--                                    <img class="card-img" src="/web/assets/images/landing/news/news1.svg" alt="Card image">-->
+            <!--                                </div>-->
+
+            <!--                                <div class="card_right_content w-60 p-3 float-right">-->
+            <!--                                    <div class="pt-3 pb-4">-->
+            <!--                                        <h3 class="m-0 text-capitalize font-weight-bold">Beauty of Sunshine</h3>-->
+            <!--                                        <h5 class="font-weight-light text-uppercase">by Alex Doe</h5>-->
+            <!--                                    </div>-->
+
+            <!--                                    <div class="font-weight-light pb-3">-->
+            <!--                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae-->
+            <!--                                            reprehenderit, sequi quisquam repellendus corporis adipisci veniam!-->
+            <!--                                            Mollitia suscipit excepturi laboriosam rem ut voluptas.-->
+            <!--                                        </p>-->
+
+            <!--                                        <a routerlink="/landing/blog-details"-->
+            <!--                                           class="btn half-button text-white btn-gradient">Read More</a>-->
+            <!--                                    </div>-->
+
+
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        &lt;!&ndash; end of col &ndash;&gt;-->
+            <!--                        <div data-aos="fade-left" class="col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-0">-->
+            <!--                            <div class="card text-left o-hidden">-->
+            <!--                                <div class="card_img_left w-40 float-left">-->
+            <!--                                    <img class="card-img" src="/web/assets/images/landing/news/news2.svg" alt="Card image">-->
+            <!--                                </div>-->
+
+            <!--                                <div class="card_right_content w-60 p-3 float-right">-->
+            <!--                                    <div class="pt-3 pb-4">-->
+            <!--                                        <h3 class="m-0 text-capitalize font-weight-bold">Never look backward-->
+            <!--                                        </h3>-->
+            <!--                                        <h5 class="font-weight-light text-uppercase">by Smith Doe</h5>-->
+            <!--                                    </div>-->
+
+            <!--                                    <div class="font-weight-light pb-3">-->
+            <!--                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae-->
+            <!--                                            reprehenderit, sequi quisquam repellendus corporis adipisci veniam!-->
+            <!--                                            Mollitia suscipit excepturi laboriosam rem ut voluptas.-->
+            <!--                                        </p>-->
+
+            <!--                                        <a routerlink="/landing/blog-details"-->
+            <!--                                           class="btn half-button btn-gradient text-white">Read More</a>-->
+            <!--                                    </div>-->
+
+
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        &lt;!&ndash; end of col &ndash;&gt;-->
+
+
+            <!--                    </div>-->
+
+            <!--                </div>-->
+            <!--            </section>-->
+            <!-- blog -->
+
+
+            <!-- start::contact-form -->
+
+
+            <!-- end::contact-form -->
+
+
+
+            <!-- customizer start -->
+
+            <!--            <div class="customizer card">-->
+            <!--                <div class="row">-->
+            <!--                    <div class="col-md-12">-->
+            <!--                        <div class="handle">-->
+            <!--                            <a href="https://api.whatsapp.com/send/?phone=918586066813&text=Got+reference+from+your+Website.Want+to+know+more+about+your+products+and+services.&app_absent=0">-->
+            <!--                                <img src="icon/WhatsappIcon.png" width="6%" alt="">-->
+            <!--                            </a>-->
+
+            <!--                            &lt;!&ndash;                            <i class="eva eva-phone-call animated infinite rotateInUpLeft"></i>&ndash;&gt;-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                    <div class="col-md-12  ">-->
+
+            <!--                        <div class="colors_wrap" data-perfect-scrollbar data-suppress-scroll-x="true">-->
+            <!--                            <div class="card-body">-->
+            <!--                                <h2 class="card-title text-center">Urgent Details</h2>-->
+
+            <!--                                <form class="row form" role="form">-->
+
+            <!--                                    <p class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+            <!--                                        Accusamus beatae cum-->
+            <!--                                        eos exercitationem fugiat, nemo. Consequuntur facilis harum nulla vero-->
+            <!--                                        voluptates. Architecto nihil provident quod ratione reiciendis, similique sit-->
+            <!--                                        voluptates?</p>-->
+
+            <!-- -->
+
+
+            <!--                                </form>-->
+
+
+            <!--                            </div>-->
+
+
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+
+
+            <!-- end of customizer -->
+
+
+        </div>
+        <!-- ============ Main content End ============= -->
+
+        <!-- ============ side icon start ============= -->
+        <div class="sticky-container">
+            <% for( let i = 0; i < footer.length; i++ ) { %>
+
+
+            <ul class="sticky">
+                <li style="border-radius: 20px;background-color: #343A58;">
+                    <a href="<%= footer.facebook %>"><img width="32" height="32" title="" alt=""
+                            src="https://drive.google.com/uc?id=1j7LLn1ZuJh_U-Ff4swbYqw41nAbabwWw"
+                            style="border-radius: 20px;"></a>
+                    <p>Facebook</p>
+                </li>
+                <li style="border-radius: 20px;background-color: skyblue;">
+                    <a href="<%= footer.twitter %>"><img width="32" height="32" title="" alt=""
+                            src="https://drive.google.com/uc?id=1qbielCGRqeH480vWlo9UJljepi8wEpWj"
+                            style="border-radius: 20px;"></a>
+                    <p>Twitter</p>
+                </li>
+                <!-- <li style="border-radius: 20px;background-color: green;">
+                    <a class="social-btn text-30 whatsapp" style="color: white;"
+                        href="https://api.whatsapp.com/send/?phone=918586066813&text=Got+reference+from+your+Website.Want+to+know+more+about+your+products+and+services.&app_absent=0">
+                        <img width="32" height="32" title="" alt=""
+                            src="https://drive.google.com/uc?id=1ha6UAQlGBFXnExIXUMgs2l1QwUNgE09K"
+                            style="border-radius: 20px;">
+                        <p>Whatsapp</p>
+                    </a>
+                </li> -->
+                <li style="border-radius: 20px;background-color: #064086;">
+                    <a href="<%= footer.linkedin %>"><img width="32" height="32" title="" alt=""
+                            src="https://drive.google.com/uc?id=1rXD704smmLePEebevlOoxJDWLFVIm4YB"
+                            style="border-radius: 20px;"></a>
+                    <p>Linkedin</p>
+                </li>
+
+            </ul>
+            <% } %>
+        </div>
+        <!--Right Side Buttons End-->
+
+        <!--Left Side Buttons Start-->
+
+
+
+        <!-- ============ side icon End ============= -->
+
+
+
+        <div id="simpleModal" class="modal" tabindex="-1" role="dialog" style="margin-top:50px;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="border-radius: 0px 35px;">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Any questions? Feel free to contact us.</h3>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                            style="margin-right: 5px;margin-top: -9px;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <p style="text-align: center;"><b>Drop Us a Message</b></p>
+                        <form class="row form" role="form" id="add_form">
+                            <div class="form-group mb-4 col-md-6">
+                                <!-- <label for="">
+                            <i class="eva eva-person-outline"></i>
+                        </label> -->
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name"
+                                    required="">
+
+                            </div>
+                            <div class="form-group mb-4 col-md-6">
+                                <!-- <label for="">
+                            <i class="eva eva-email-outline"></i>
+                        </label> -->
+                                <input type="email" required="" id="email" name="email" class="form-control"
+                                    placeholder="Your email" aria-describedby="helpId">
+
+                            </div>
+                            <div class="form-group mb-4 col-md-12">
+                                <!-- <label for="">
+                            <i class="eva eva-edit-2-outline"></i>
+                        </label> -->
+                                <input type="text" required="" id="subject" name="subject" class="form-control"
+                                    placeholder="Your subject here" aria-describedby="helpId">
+
+                            </div>
+
+                            <div class="form-group mb-4 col-md-12">
+
+                                <!-- <label for="">
+                            <i class="eva eva-edit-outline"></i>
+                        </label> -->
+                                <textarea class="form-control" id="message" name="message"
+                                    placeholder="Your message here" required="" name="message" rows="3"></textarea>
+
+
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <button type="submit"
+                                    class="btn btn-block half-button form-submit-button btn-large btn-gradient">
+                                    Send
+                                    message
+                                </button>
+
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<%- include ('partials/footer.ejs') %>
+<!-- add Contact -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- <script>
+    function getFormData($form) {
+      var unindexed_array = $form.serializeArray();
+      var indexed_array = {};
+  
+      $.map(unindexed_array, function (n, i) {
+        indexed_array[n["name"]] = n["value"];
+      });
+      return JSON.stringify(indexed_array);
+    }
+    var form = $("#add_form");
+    form.on("submit", addaboutUssubmitHandler);
+  
+    function addaboutUssubmitHandler(e) {
+      e.preventDefault();
+  
+      var formData = getFormData(form);
+      console.log(formData)
+  
+      // DO POST
+      $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        url: "/app/contact/add",
+        data: formData,
+      })
+        .done((res) => {
+         console.log(res);
+         window.location.reload();
+        })
+        .fail(function (xhr, status, error) {
+          console.log(xhr.responseText)
+        });
+    }
+</script> -->

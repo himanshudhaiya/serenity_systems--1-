@@ -1,0 +1,156 @@
+<!-- image add -->
+<script>
+  var addform = $("#form");
+
+  addform.on("submit", addslidersubmitHandler);
+
+  function addslidersubmitHandler(e) {
+    e.preventDefault();
+
+    // PREPARE FORM DATA
+    var formData = new FormData(addform[0]);
+    console.log(formData);
+    // // DO POST
+    $.ajax({
+      type: "POST",
+      cache: false,
+      enctype: "multipart/form-data",
+      processData: false,
+      contentType: false,
+      url: "/admin/users/add",
+      data: formData,
+    })
+      .done((res) => {
+        console.log("User add successfully");
+        window.location.replace("list");
+      })
+      .fail(function (xhr, status, error) {
+        console.log(xhr.responseText);
+      });
+  }
+</script>
+<!-- image add -->
+
+<!-- addform -->
+<script>
+  function getFormData($form) {
+    var unindexed_array = $form.serializeArray();
+    var indexed_array = {};
+
+    $.map(unindexed_array, function (n, i) {
+      indexed_array[n["name"]] = n["value"];
+    });
+    return JSON.stringify(indexed_array);
+  }
+  var form = $("#form");
+  form.on("submit", addaboutUssubmitHandler);
+
+  function addaboutUssubmitHandler(e) {
+    e.preventDefault();
+
+    var formData = getFormData(form);
+
+    // DO POST
+    $.ajax({
+      type: "POST",
+      contentType: "application/json",
+      url: "add",
+      data: formData,
+    })
+      .done((res) => {
+        Snackbar.show({
+          text: res,
+          pos: "bottom-right",
+          customClass: "snackbar-custom-s",
+          showAction: false,
+        });
+        window.location.replace("list");
+      })
+      .fail(function (xhr, status, error) {
+        Snackbar.show({
+          text: xhr.responseText,
+          pos: "bottom-right",
+          customClass: "snackbar-custom-d",
+          showAction: false,
+        });
+      });
+  }
+</script>
+<!-- addform -->
+
+<!-- Delete -->
+<script>
+  function deletedetails(id) {
+    if (confirm("Do you really want to delete this record")) {
+      // DO POST
+      $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        url: "/admin/course/delete",
+        data: JSON.stringify({
+          id: id,
+        }),
+      })
+        .done((res) => {
+          Snackbar.show({
+            text: res,
+            pos: "bottom-right",
+            customClass: "snackbar-custom-s",
+            showAction: false,
+          });
+          window.location.reload();
+        })
+        .fail(function (xhr, status, error) {
+          Snackbar.show({
+            text: xhr.responseText,
+            pos: "bottom-right",
+            customClass: "snackbar-custom-d",
+            showAction: false,
+          });
+        });
+    }
+  }
+</script>
+<!-- delete -->
+
+<!-- addform new script -->
+<script>
+  function getFormData($form) {
+    var unindexed_array = $form.serializeArray();
+    var indexed_array = {};
+
+    $.map(unindexed_array, function (n, i) {
+      indexed_array[n["name"]] = n["value"];
+    });
+    return JSON.stringify(indexed_array);
+  }
+
+  $("#form").on("submit", function (e) {
+    e.preventDefault();
+    var formData = getFormData($("#form"));
+    $.ajax({
+      type: "POST",
+      contentType: "application/json",
+      url: "/admin/course/add",
+      data: formData,
+    })
+      .done((res) => {
+        Snackbar.show({
+          text: res,
+          pos: "bottom-right",
+          customClass: "snackbar-custom-s",
+          showAction: false,
+        });
+        window.location.reload();
+      })
+      .fail(function (xhr, status, error) {
+        Snackbar.show({
+          text: xhr.responseText,
+          pos: "bottom-right",
+          customClass: "snackbar-custom-d",
+          showAction: false,
+        });
+      });
+  });
+</script>
+<!-- addform new script -->

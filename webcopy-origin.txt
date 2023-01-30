@@ -1,0 +1,292 @@
+Uri: http://www.serenitysystems.in/
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\index.htm
+Content Type: text/html
+
+Uri: http://www.serenitysystems.in/assets/fonts/evaicons/eva-icons.css
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\fonts\evaicons\eva-icons.css
+Content Type: text/css
+
+Uri: http://www.serenitysystems.in/assets/fonts/evaicons/fonts/Eva-Icons.eot
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\fonts\evaicons\fonts\Eva-Icons.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://www.serenitysystems.in/assets/fonts/evaicons/fonts/Eva-Icons.eot?
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\fonts\evaicons\fonts\Eva-Icons-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://www.serenitysystems.in/assets/fonts/evaicons/fonts/Eva-Icons.svg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\fonts\evaicons\fonts\Eva-Icons.svg
+Content Type: image/svg+xml
+
+Uri: http://www.serenitysystems.in/assets/fonts/evaicons/fonts/Eva-Icons.ttf
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\fonts\evaicons\fonts\Eva-Icons.ttf
+Content Type: font/ttf
+
+Uri: http://www.serenitysystems.in/assets/fonts/evaicons/fonts/Eva-Icons.woff
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\fonts\evaicons\fonts\Eva-Icons.woff
+Content Type: font/woff
+
+Uri: http://www.serenitysystems.in/assets/fonts/evaicons/fonts/Eva-Icons.woff2
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\fonts\evaicons\fonts\Eva-Icons.woff2
+Content Type: font/woff2
+
+Uri: http://www.serenitysystems.in/assets/images/landing/Bg/Bg-10.png
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\Bg\Bg-10.png
+Content Type: image/png
+
+Uri: http://www.serenitysystems.in/assets/images/landing/Bg/bg.jpg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\Bg\bg.jpg
+Content Type: image/jpeg
+
+Uri: http://www.serenitysystems.in/assets/images/landing/Bg/Bg_01.png
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\Bg\Bg_01.png
+Content Type: image/png
+
+Uri: http://www.serenitysystems.in/assets/images/landing/Bg/Bg_02.png
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\Bg\Bg_02.png
+Content Type: image/png
+
+Uri: http://www.serenitysystems.in/assets/images/landing/Bg/Bg_03.png
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\Bg\Bg_03.png
+Content Type: image/png
+
+Uri: http://www.serenitysystems.in/assets/images/landing/Bg/Bg_04.png
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\Bg\Bg_04.png
+Content Type: image/png
+
+Uri: http://www.serenitysystems.in/assets/images/landing/Bg/Bg_06.png
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\Bg\Bg_06.png
+Content Type: image/png
+
+Uri: http://www.serenitysystems.in/assets/images/landing/Bg/Bg_08.png
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\Bg\Bg_08.png
+Content Type: image/png
+
+Uri: http://www.serenitysystems.in/assets/images/landing/Bg/wide-img.jpg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\Bg\wide-img.jpg
+Content Type: image/jpeg
+
+Uri: http://www.serenitysystems.in/assets/images/landing/faces/10.jpg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\faces\10.jpg
+Content Type: image/jpeg
+
+Uri: http://www.serenitysystems.in/assets/images/landing/faces/12.jpg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\faces\12.jpg
+Content Type: image/jpeg
+
+Uri: http://www.serenitysystems.in/assets/images/landing/faces/13.jpg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\faces\13.jpg
+Content Type: image/jpeg
+
+Uri: http://www.serenitysystems.in/assets/images/landing/faces/15.jpg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\faces\15.jpg
+Content Type: image/jpeg
+
+Uri: http://www.serenitysystems.in/assets/images/landing/faces/16.jpg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\faces\16.jpg
+Content Type: image/jpeg
+
+Uri: http://www.serenitysystems.in/assets/images/landing/faces/2.jpg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\faces\2.jpg
+Content Type: image/jpeg
+
+Uri: http://www.serenitysystems.in/assets/images/landing/faces/3.jpg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\faces\3.jpg
+Content Type: image/jpeg
+
+Uri: http://www.serenitysystems.in/assets/images/landing/faces/5.jpg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\faces\5.jpg
+Content Type: image/jpeg
+
+Uri: http://www.serenitysystems.in/assets/images/landing/news/news1.jpg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\news\news1.jpg
+Content Type: image/jpeg
+
+Uri: http://www.serenitysystems.in/assets/images/landing/svg/contact2.svg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\svg\contact2.svg
+Content Type: image/svg+xml
+
+Uri: http://www.serenitysystems.in/assets/images/landing/svg/slider4.svg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\landing\svg\slider4.svg
+Content Type: image/svg+xml
+
+Uri: http://www.serenitysystems.in/assets/images/page-bg-bottom.png
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\images\page-bg-bottom.png
+Content Type: image/png
+
+Uri: http://www.serenitysystems.in/assets/js/es5/script.min.js
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\js\es5\script.min.js
+Content Type: application/javascript
+
+Uri: http://www.serenitysystems.in/assets/js/es5/slick.script.min.js
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\js\es5\slick.script.min.js
+Content Type: application/javascript
+
+Uri: http://www.serenitysystems.in/assets/js/vendor/aos.js
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\js\vendor\aos.js
+Content Type: application/javascript
+
+Uri: http://www.serenitysystems.in/assets/js/vendor/bootstrap.bundle.min.js
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\js\vendor\bootstrap.bundle.min.js
+Content Type: application/javascript
+
+Uri: http://www.serenitysystems.in/assets/js/vendor/jquery-3.3.1.min.js
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\js\vendor\jquery-3.3.1.min.js
+Content Type: application/javascript
+
+Uri: http://www.serenitysystems.in/assets/js/vendor/perfect-scrollbar.min.js
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\js\vendor\perfect-scrollbar.min.js
+Content Type: application/javascript
+
+Uri: http://www.serenitysystems.in/assets/js/vendor/slick.min.js
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\js\vendor\slick.min.js
+Content Type: application/javascript
+
+Uri: http://www.serenitysystems.in/assets/logo/logo.png
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\logo\logo.png
+Content Type: image/png
+
+Uri: http://www.serenitysystems.in/assets/slide/slide-1.jpg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\slide\slide-1.jpg
+Content Type: image/jpeg
+
+Uri: http://www.serenitysystems.in/assets/styles/css/custom.css
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\styles\css\custom.css
+Content Type: text/css
+
+Uri: http://www.serenitysystems.in/assets/styles/css/themes/lite-purple.min.css
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\styles\css\themes\lite-purple.min.css
+Content Type: text/css
+
+Uri: http://www.serenitysystems.in/assets/styles/vendor/aos.css
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\styles\vendor\aos.css
+Content Type: text/css
+
+Uri: http://www.serenitysystems.in/assets/styles/vendor/perfect-scrollbar.css
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\styles\vendor\perfect-scrollbar.css
+Content Type: text/css
+
+Uri: http://www.serenitysystems.in/assets/styles/vendor/slick-theme.css
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\styles\vendor\slick-theme.css
+Content Type: text/css
+
+Uri: http://www.serenitysystems.in/assets/styles/vendor/slick.css
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\assets\styles\vendor\slick.css
+Content Type: text/css
+
+Uri: http://www.serenitysystems.in/icon/CRM.svg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\icon\CRM.svg
+Content Type: image/svg+xml
+
+Uri: http://www.serenitysystems.in/icon/E-Commerce.svg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\icon\E-Commerce.svg
+Content Type: image/svg+xml
+
+Uri: http://www.serenitysystems.in/icon/frontend.svg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\icon\frontend.svg
+Content Type: image/svg+xml
+
+Uri: http://www.serenitysystems.in/icon/Graphics.svg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\icon\Graphics.svg
+Content Type: image/svg+xml
+
+Uri: http://www.serenitysystems.in/icon/Icon-1.svg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\icon\Icon-1.svg
+Content Type: image/svg+xml
+
+Uri: http://www.serenitysystems.in/icon/Icon-2.svg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\icon\Icon-2.svg
+Content Type: image/svg+xml
+
+Uri: http://www.serenitysystems.in/icon/Icon-3.svg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\icon\Icon-3.svg
+Content Type: image/svg+xml
+
+Uri: http://www.serenitysystems.in/icon/Icon-4.svg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\icon\Icon-4.svg
+Content Type: image/svg+xml
+
+Uri: http://www.serenitysystems.in/icon/Icon-5.svg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\icon\Icon-5.svg
+Content Type: image/svg+xml
+
+Uri: http://www.serenitysystems.in/icon/left-top-pattern.png
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\icon\left-top-pattern.png
+Content Type: image/png
+
+Uri: http://www.serenitysystems.in/icon/right-top-pattern.png
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\icon\right-top-pattern.png
+Content Type: image/png
+
+Uri: http://www.serenitysystems.in/icon/server (1).svg
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\icon\server (1).svg
+Content Type: image/svg+xml
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\ajax\libs\font-awesome\4.7.0\css\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\ajax\libs\font-awesome\4.7.0\fonts\fontawesome-webfont-1.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\ajax\libs\font-awesome\4.7.0\fonts\fontawesome-webfont.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\ajax\libs\font-awesome\4.7.0\fonts\fontawesome-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\ajax\libs\font-awesome\4.7.0\fonts\fontawesome-webfont.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\ajax\libs\font-awesome\4.7.0\fonts\fontawesome-webfont.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\ajax\libs\font-awesome\4.7.0\fonts\fontawesome-webfont.woff
+Content Type: application/octet-stream
+
+Uri: https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\css
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/nunito/v24/XRXI3I6Li01BKofiOc5wtlZ2di8HDBImdTQ3ig.ttf
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\s\nunito\v24\XRXI3I6Li01BKofiOc5wtlZ2di8HDBImdTQ3ig.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/nunito/v24/XRXI3I6Li01BKofiOc5wtlZ2di8HDDsmdTQ3ig.ttf
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\s\nunito\v24\XRXI3I6Li01BKofiOc5wtlZ2di8HDDsmdTQ3ig.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/nunito/v24/XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmdTQ3ig.ttf
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\s\nunito\v24\XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmdTQ3ig.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/nunito/v24/XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmdTQ3ig.ttf
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\s\nunito\v24\XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmdTQ3ig.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/nunito/v24/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3ig.ttf
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\s\nunito\v24\XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3ig.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/nunito/v24/XRXI3I6Li01BKofiOc5wtlZ2di8HDOUhdTQ3ig.ttf
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\s\nunito\v24\XRXI3I6Li01BKofiOc5wtlZ2di8HDOUhdTQ3ig.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/nunito/v24/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNirXAHjabf.ttf
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\s\nunito\v24\XRXK3I6Li01BKofIMPyPbj8d7IEAGXNirXAHjabf.ttf
+Content Type: font/ttf
+
+Uri: https://kit.fontawesome.com/a076d05399.js
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\a076d05399.js
+Content Type: text/javascript
+
+Uri: https://ui-lib.com/wp-content/uploads/2019/04/bg-1.png
+File Name: C:\Downloaded Web Sites\www.serenitysystems.in\wp-content\uploads\2019\04\bg-1.png
+Content Type: image/png
+

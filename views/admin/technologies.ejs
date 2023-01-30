@@ -1,0 +1,475 @@
+<%- include('partials/header.ejs') %>
+
+<div class="main-content">
+  <section class="section">
+    <div class="section-body">
+      <div class="row">
+        <div class="col-12">
+          <!-- <div class="card mb-0">
+            <div class="card-body">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"
+                    >All <span class="badge badge-white"></span
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    >Draft <span class="badge badge-primary"></span
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    >Pending <span class="badge badge-primary"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h4>All Technologies</h4>
+              <button
+                class="btn btn-info ml-auto"
+                data-toggle="modal"
+                data-target=".bd-example-modal-lg"
+              >
+                Add New
+              </button>
+            </div>
+            <div class="card-body">
+              <!-- <d 
+                <select class="form-control selectric">
+                  <option>Action For Selected</option>
+                  <option>Move to Draft</option>
+                  <option>Move to Pending</option>
+                  <option>Delete Permanently</option>
+                </select>
+              </div> -->
+              <div class="float-right">
+                <!-- <form>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search"
+                    />
+                    <div class="input-group-append">
+                      <button class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form> -->
+              </div>
+              <div class="clearfix mb-3"></div>
+              <div class="table-responsive">
+                <table class="table text-center">
+                    <thead>
+                        <tr>  
+                            <th>Category</th>
+                            <th>Image</th>
+                            <th>text</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <% for (let i = 0; i < technologies.length; i++ ) { %>
+                    <tr>
+                        <td><%= technologies[i].category %></td>
+                        <td><img src="/uploads/technologies/<%= technologies[i].icon %>" width="70"
+                          height="50"
+                          data-toggle="title"
+                          class="rounded"alt=""> </td>
+                        <td><%- technologies[i].text %></td>
+                        <td><button class="btn btn-primary" data-target="modal" id="edit_button" data-model="<%= JSON.stringify(technologies[i]) %>">Edit</button></td>
+                        <td><button class="btn btn-danger" onclick="deletetechnologies('<%= technologies[i]._id %>')">Delete</button></td>
+                    </tr>
+                   <% } %> 
+                    
+                </table>
+              </div>
+              <div class="float-right">
+                <nav>
+                  <ul class="pagination">
+                    <li class="page-item disabled"> 
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  add model -->
+  <div class="modal fade  bd-example-modal-lg" id=".bd-example-modal-lg">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Add Technologies</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form id="add_technologies" class="mx-5">
+            <div class="form-group">
+              <label>Name</label>
+              <input name="category" type="text" class="form-control" />
+            </div>  
+            <div class="form-group">
+              <label>Image</label>
+              <input
+                type="file"
+                class="form-control"
+                id="icon"
+                name="icon"
+                accept="icon/*"
+              />
+            </div>
+            <div class="form-group">
+              <label>Text</label>
+              <!-- <input name="text" type="text" class="form-control" /> -->
+              <textarea name="text" id="summernote" col="20" row="5"  style="width: 370px;"></textarea>
+            </div>
+            <div class="pull-right mt-3">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                close
+              </button>
+              <button type="submit" class="btn btn-info">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- model end -->
+  
+    <!-- model edit -->
+    <div class="modal fade  bd-example-modal-lg" id="edit">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Edit Technologies</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+  
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form id="editform" class="mx-5">
+              <input type="hidden" name="editid" id="editid">
+              <div class="form-group">
+                <label>Name</label>
+                <input name="editcategory" id="editcategory" type="text" class="form-control" />
+              </div>  
+              <!-- <div class="form-group">
+                <label>Image</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="icon"
+                  name="icon"
+                  accept="icon/*"
+                />
+              </div> -->
+              <div class="form-group">
+                <label>Text</label>
+                <input name="edittext" id="edittext" type="text" class="form-control" />
+              </div>
+              <div class="pull-right mt-3">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  close
+                </button>
+                <button type="submit" class="btn btn-info">Add</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- model edit end -->
+</div>
+<div class="settingSidebar">
+  <a href="javascript:void(0)" class="settingPanelToggle">
+    <i class="fa fa-spin fa-cog"></i>
+  </a>
+  <div class="settingSidebar-body ps-container ps-theme-default">
+    <div class="fade show active">
+      <div class="setting-panel-header">Setting Panel</div>
+      <div class="p-15 border-bottom">
+        <h6 class="font-medium m-b-10">Select Layout</h6>
+        <div class="selectgroup layout-color w-50">
+          <label class="selectgroup-item">
+            <input
+              type="radio"
+              name="value"
+              value="1"
+              class="selectgroup-input-radio select-layout"
+              checked
+            />
+            <span class="selectgroup-button">Light</span>
+          </label>
+          <label class="selectgroup-item">
+            <input
+              type="radio"
+              name="value"
+              value="2"
+              class="selectgroup-input-radio select-layout"
+            />
+            <span class="selectgroup-button">Dark</span>
+          </label>
+        </div>
+      </div>
+      <div class="p-15 border-bottom">
+        <h6 class="font-medium m-b-10">Sidebar Color</h6>
+        <div class="selectgroup selectgroup-pills sidebar-color">
+          <label class="selectgroup-item">
+            <input
+              type="radio"
+              name="icon-input"
+              value="1"
+              class="selectgroup-input select-sidebar"
+            />
+            <span
+              class="selectgroup-button selectgroup-button-icon"
+              data-toggle="tooltip"
+              data-original-title="Light Sidebar"
+              ><i class="fas fa-sun"></i
+            ></span>
+          </label>
+          <label class="selectgroup-item">
+            <input
+              type="radio"
+              name="icon-input"
+              value="2"
+              class="selectgroup-input select-sidebar"
+              checked
+            />
+            <span
+              class="selectgroup-button selectgroup-button-icon"
+              data-toggle="tooltip"
+              data-original-title="Dark Sidebar"
+              ><i class="fas fa-moon"></i
+            ></span>
+          </label>
+        </div>
+      </div>
+      <div class="p-15 border-bottom">
+        <h6 class="font-medium m-b-10">Color Theme</h6>
+        <div class="theme-setting-options">
+          <ul class="choose-theme list-unstyled mb-0">
+            <li title="white" class="active">
+              <div class="white"></div>
+            </li>
+            <li title="cyan">
+              <div class="cyan"></div>
+            </li>
+            <li title="black">
+              <div class="black"></div>
+            </li>
+            <li title="purple">
+              <div class="purple"></div>
+            </li>
+            <li title="orange">
+              <div class="orange"></div>
+            </li>
+            <li title="green">
+              <div class="green"></div>
+            </li>
+            <li title="red">
+              <div class="red"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="p-15 border-bottom">
+        <div class="theme-setting-options">
+          <label class="m-b-0">
+            <input
+              type="checkbox"
+              name="custom-switch-checkbox"
+              class="custom-switch-input"
+              id="mini_sidebar_setting"
+            />
+            <span class="custom-switch-indicator"></span>
+            <span class="control-label p-l-10">Mini Sidebar</span>
+          </label>
+        </div>
+      </div>
+      <div class="p-15 border-bottom">
+        <div class="theme-setting-options">
+          <label class="m-b-0">
+            <input
+              type="checkbox"
+              name="custom-switch-checkbox"
+              class="custom-switch-input"
+              id="sticky_header_setting"
+            />
+            <span class="custom-switch-indicator"></span>
+            <span class="control-label p-l-10">Sticky Header</span>
+          </label>
+        </div>
+      </div>
+      <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
+        <a
+          href="#"
+          class="btn btn-icon icon-left btn-primary btn-restore-theme"
+        >
+          <i class="fas fa-undo"></i> Restore Default
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include ('partials/footer.ejs')%>
+
+<script>
+  function deletetechnologies(id) {
+    if (confirm("Do you really want to delete this record")) {
+      // DO POST
+      $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        url: "/admin/technologies/delete",
+        data: JSON.stringify({
+          id: id,
+        }),
+        
+      })
+      setTimeout(function (res) {
+          console.log("Form Successfully")
+          window.location.reload(1);
+        }, 1000)
+
+        .fail(function (xhr, status, error) {
+          console.log(xhr.responseText)
+        });
+    }
+  }
+</script>
+<!-- add -->
+<script>
+    var addform = $("#add_technologies");
+  
+    addform.on("submit", addslidersubmitHandler);
+  
+    function addslidersubmitHandler(e) {
+      e.preventDefault();
+  
+      // PREPARE FORM DATA
+      var formData = new FormData(addform[0]);
+      console.log(formData);
+      // // DO POST
+      $.ajax({
+        type: "POST",
+        cache: false,
+        enctype: "multipart/form-data",
+        processData: false,
+        contentType: false,
+        url: "/admin/technologies/add",
+        data: formData,
+      })
+      setTimeout(function (res) {
+          console.log("Form Successfully")
+          window.location.reload(1);
+        }, 1000)
+
+        .fail(function (xhr, status, error) {
+          console.log(xhr.responseText)
+        });
+    }
+</script>
+
+<!-- Edit -->
+<script>
+  function getFormData($form) {
+    var unindexed_array = $form.serializeArray();
+    var indexed_array = {};
+
+    $.map(unindexed_array, function (n, i) {
+      indexed_array[n["name"]] = n["value"];
+    });
+    return JSON.stringify(indexed_array);
+  }
+  $(document).on("click", "#edit_button", function (e) {
+    let getData = $(e.target).attr("data-model");
+    let finalData = JSON.parse(getData);
+    $("#edit").modal("show");
+    var data = finalData;
+    $("#editid").val(data._id);
+    $("#editcategory").val(data.category);
+    $("#edittext").val(data.text);
+  });
+
+  var editform = $("#editform");
+  editform.on("submit", editSubmitHandler);
+
+  function editSubmitHandler(e) {
+    e.preventDefault();
+
+    var formData = getFormData(editform);
+    console.log(formData);
+
+    // DO POST
+    $.ajax({
+      type: "POST",
+      contentType: "application/json",
+      url: "/admin/technologies/edit",
+      data: formData,
+    })
+    setTimeout(function (res) {
+          console.log("Form Successfully")
+          window.location.reload(1);
+        }, 1000)
+
+        .fail(function (xhr, status, error) {
+          console.log(xhr.responseText)
+        });
+  }
+</script>
+
+
+
+
+
+

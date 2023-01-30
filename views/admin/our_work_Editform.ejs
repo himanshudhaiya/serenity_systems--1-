@@ -1,0 +1,128 @@
+<%- include('partials/header.ejs') %>
+
+
+<div class="main-content">
+    <section class="section">
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="my-4">
+                      <h3 class="ml-5">Add Our Works</h3>
+                      <div class="modal-body">
+                        <form id="edit_ourwork" class="mx-5">
+                          <input type="hidden" id="editid" name="editid" value="<%= ourwork._id %>">
+                         
+                          <div class="form-group">
+                            <label>Heading</label>
+                            <input type="text" class="form-control" id="editheading" name="editheading" value="<%= ourwork.heading %>"/>
+                          </div>
+                          <div class="form-group">
+                            <label>Paragraph</label>
+                            <input type="text" class="form-control" id="editparagraph" name="editparagraph" value="<%= ourwork.paragraph %>"/>
+                          </div>
+              
+                          <div class="form-group">
+                            <label>Heading-1</label>
+                            <input type="text" class="form-control" id="editheading1" name="editheading1"  value="<%= ourwork.heading1 %>" />
+                          </div>
+                          <div class="form-group">
+                            <label>Paragraph-1</label>
+                            <input type="text" class="form-control" id="editparagraph1" name="editparagraph1" value="<%- ourwork.paragraph1 %>"/>
+                          </div>
+              
+                          <div class="form-group">
+                            <label>Heading-2</label>
+                            <input type="text" class="form-control" id="editheading2" name="editheading2" value="<%- ourwork.heading2 %>"/>
+                          </div>
+                          <div class="form-group">
+                            <label>Paragraph-2</label>
+                            <input type="text" class="form-control" id="editparagraph2" name="editparagraph2" value="<%- ourwork.paragraph2 %>"/>
+                          </div>
+              
+                          <div class="form-group">
+                            <label>Heading-3</label>
+                            <input type="text" class="form-control" id="editheading3" name="editheading3" value="<%- ourwork.heading3 %>"/>
+                          </div>
+                          <div class="form-group">
+                            <label>Paragraph-3</label>
+                            <input type="text" class="form-control" id="editparagraph3" name="editparagraph3" value="<%- ourwork.paragraph3 %>"/>
+                          </div>
+              
+              
+                          <!-- <textarea id="demo-editor-bootstrap"></textarea> -->
+                          <!-- <div class="form-group">
+                            <label>Description</label><br>
+                            <textarea name="description" id="description" col="20" row="5"  style="width: 370px;"></textarea>
+                          </div>
+              
+                          <div class="form-group">
+                            <label>Short Description</label><br>
+                            <textarea name="short_description" id="short_description" col="20" row="5"  style="width: 370px;"></textarea>
+                          </div> -->
+              
+                          <div class="pull-right mt-3">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              close
+                            </button>
+                            <button type="submit" class="btn btn-info">Add</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+</div>
+
+
+
+
+<%- include ('partials/footer.ejs')%>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<script>
+    // $(document).on("click", "#edit_btn", function (e) {
+    //   let getData = $(e.target).attr("data-model");
+    //   let finalData = JSON.parse(getData);
+    //   $("#editModal").modal("show");
+    //   var data = finalData;
+    //   $("#editid").val(data._id);
+    //   $("#editheading").val(data.heading)
+    //   $("#editparagraph").val(data.paragraph)
+    //   $("#editheading1").val(data.heading1)
+    //   $("#editparagraph1").val(data.paragraph1)
+    //   $("#editheading2").val(data.heading2)
+    //   $("#editparagraph2").val(data.paragraph2)
+    //   $("#editheading3").val(data.heading3)
+    //   $("#editparagraph3").val(data.paragraph3)
+    // });
+  
+    var editform = $("#edit_ourwork");
+    editform.on("submit", editSubmitHandler);
+  
+    function editSubmitHandler(e) {
+      e.preventDefault();
+  
+      var formData = getFormData(editform);
+      console.log(formData);
+  
+      // DO POST
+      $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        url: "/admin/ourwork/edit",
+        data: JSON.stringify(formData),
+      })
+      setTimeout(function (res) {
+            console.log("Form Successfully")
+            window.location.replace("/admin/ourwork/list");
+          }, 1000)
+  
+          .fail(function (xhr, status, error) {
+            console.log(xhr.responseText)
+          });
+    }
+  </script> 

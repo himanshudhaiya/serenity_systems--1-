@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SERENITY SYSTEM </title>
+  <link rel="stylesheet" href="/web/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <!-- <link href="path/to/style/eva-icons.css"> -->
+  <link href="css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="/web/assets/styles/vendor/slick.css">
+  <link rel="stylesheet" href="/web/assets/styles/vendor/slick-theme.css">
+  <link rel="stylesheet" href="/web/assets/styles/vendor/aos.css">
+  <link rel="stylesheet" href="/web/assets/styles/vendor/perfect-scrollbar.css">
+  <link rel="stylesheet" href="/web/assets/styles/css/themes/lite-purple.min.css">
+  <link rel="stylesheet" href="/web/assets/styles/css/custom.css">
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+  <link rel="stylesheet" href="/web/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    body {
+      font-family: "Lato";
+      /* background-image: linear-gradient( to left, #ad5389, white); */
+    }
+
+    /*Right Side Buttons Start*/
+    .sticky-container {
+      padding: 0px;
+      margin: 0px;
+      position: fixed;
+      right: -127px;
+      top: 130px;
+      width: 200px;
+    }
+
+    .sticky li {
+      list-style-type: none;
+
+      color: #efefef;
+      height: 43px;
+      padding: 0px;
+      margin: 0px 0px 1px 0px;
+      -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>");
+
+      -webkit-filter: grayscale(100%);
+    }
+
+    .sticky li:hover {
+      margin-left: -115px;
+      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>");
+      -webkit-filter: grayscale(0%);
+    }
+
+    .sticky li img {
+      float: left;
+      margin: 5px 5px;
+      margin-right: 10px;
+    }
+
+    .sticky li p {
+      float: left;
+      padding: 0px;
+      margin: 0px;
+      text-transform: uppercase;
+      line-height: 43px;
+    }
+
+    /*Right Side Buttons End*/
+
+    /*Left Side Buttons Start*/
+    .sticky-left-container {
+      padding: 0px;
+      margin: 0px;
+      position: fixed;
+      left: -158px;
+      top: 40%;
+      width: 200px;
+      z-index: 2;
+    }
+
+    .sticky-left li {
+      list-style-type: none;
+
+      color: #efefef;
+      height: 43px;
+      padding: 0px;
+      margin: 0px 0px 1px 0px;
+      -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+    }
+
+    .sticky-left li:hover {
+      margin-right: -150px;
+
+      border-radius: 25px 25px 25px 0;
+    }
+
+    .sticky-left li img {
+      float: right;
+      border-radius: 50%;
+      margin: 5px 5px;
+      margin-left: 10px;
+    }
+
+    .sticky-left li p {
+      padding: 0px;
+      float: right;
+      margin: 0px;
+      text-transform: uppercase;
+      line-height: 43px;
+    }
+
+    /*Left Side Buttons End*/
+
+    /*Content Start*/
+    .content {
+      margin-top: 150px;
+      margin-left: 100px;
+      width: 500px;
+    }
+
+    h1,
+    h2 {
+      font-family: "Source Sans Pro", sans-serif;
+      /* color: #ecf0f1; */
+      padding: 0px;
+      margin: 0px;
+      font-weight: normal;
+    }
+
+    h1 {
+      font-weight: 900;
+      font-size: 64px;
+    }
+
+    h2 {
+      font-size: 26px;
+    }
+
+    p {
+      /* color: #ecf0f1; */
+      font-family: "Lato";
+      line-height: 28px;
+      font-size: 15px;
+    }
+
+    /*Content End*/
+  </style>
+        
+        
+        <div class="main-header w-auto header-fixed-default" id="home-header" style="background-color: #071c36;">
+          <nav class="navbar container  navbar-expand-lg" style="background-color: #071c36">
+
+
+              <div class="mt-1 " style="margin: 0 12px 0">
+                  <img src="/web/assets/logo/logo.png" width="200px" style="height: 65px;"
+                      onclick="location.href='index.html'" alt="">
+              </div>
+
+              <div class="menu-toggle navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+              </div>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                  <div style="margin: auto"></div>
+
+                  <div class=" ">
+
+                      <ul class="navbar-nav">
+
+
+                          <li class="nav-item">
+                          <li class="nav-item">
+                              <a class="scroll-to nav-link m-3" href="/app/webhome/list" style="color: white"><b>Home</b></a>
+                          </li>
+                          <a class="scroll-to nav-link m-3    " href="" style="color:
+                                      white" id="dropdownMegaMenuButton1" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                              <b>Services +</b> <i class="bi bi-chevron-down"></i></a>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+                             style="background: rgba(204, 16, 16, 0);"
+                              >
+                              <div class="row">
+                                  <div class="col-sm-12">
+                                      <div class="menu-icon-grid " style="width: 184px; height: 250px;">
+                                          <p class="text-primary text--cap ">
+                                              <a href="" class=" text--cap btn half-button btn-gradient"
+                                                  style="width: 165px;"> <b>ECOMMERCE</b></a>
+                                          </p>
+
+
+
+                                          <!-- <a href="magento.html">Magento Development </a>
+                                              <a href="magento2services.html">Magento 2 Migration</a>
+                                              <a href="odoo.html"> Odoo ERP</a>
+                                              <a href="mobile.html">Mobile Commerce </a>
+                                              <a href="CRMCommerce.html"> CRM for Commerce</a> -->
+
+
+                                          <p class="text-primary text--cap ">
+                                              <a href="" class=" text--cap btn half-button btn-gradient"
+                                                  style="width: 165px;margin-top: -13px;"> <b>MICROSOFT</b></a>
+                                          </p>
+
+                                          <!-- <a href="asp.html">ASP.NET Development </a>
+                                              <a href="netcore.html">.NET Core Development </a>
+                                              <a href="sharepoint.html">SharePoint Development </a>
+                                              <a href="powerbi.html">PowerBI Development </a>
+                                              <a href="powerapps.html">PowerApps Development </a> -->
+
+
+
+                                          <p class="text-primary text--cap ">
+                                              <a href="" class=" text--cap btn half-button btn-gradient"
+                                                  style="width: 165px;margin-top: -13px;"> <b>LAMP
+                                                      TECHNOLOGY</b></a>
+
+                                          </p>
+
+                                          <!-- <a href="phpdev.html">PHP Website Development </a>
+                                              <a href="laravel.html">Laravel Development </a>
+                                              <a href="wordpr.html">WordPress Development </a>
+                                              <a href="symfony.html">Symfony Development </a>
+                                              <a href="progressive.html">Progressive Web Apps </a> -->
+
+                                          <p class="text-primary text--cap ">
+                                              <a href="" class=" text--cap btn half-button btn-gradient"
+                                                  style="width: 165px;margin-top: -13px;"> <b>
+                                                      CLOUD SERVICES</b></a>
+
+                                          </p>
+                                          <!-- <a href="dev.html">DevOps </a>
+                                              <a href="aws.html">Amazon Web Services </a>
+                                              <a href="azure.html ">Azure Cloud Service </a>
+                                              <a href="googleapp.html">Google App Engine Services </a>
+                                              <a href="office.html">Office 365 Services </a> -->
+
+
+
+                                          <p class="text-primary text--cap ">
+                                              <a href="" class=" text--cap btn half-button btn-gradient"
+                                                  style="width: 165px;margin-top: -13px;"> <b>MOBILE</b></a>
+
+                                          </p>
+
+                                          <!-- <a href="iphone.html">iPhone App Development </a>
+                                              <a href="android.html">Android App Development</a>
+                                              <a href="hybrid.html">Hybrid App Development</a>
+                                              <a href="ionic.html">Ionic Development</a>
+                                              <a href="xamarin.html">Xamarin App Development</a> -->
+
+
+                                          <p class="text-primary text--cap ">
+                                              <a href="" class=" text--cap btn half-button btn-gradient"
+                                                  style="width: 165px;margin-top: -13px;"> <b>
+                                                      NODE.JS & MONGODB</b></a>
+
+                                          </p>
+                                          <!-- <a href="full.html">Full Stack Development </a>
+                                              <a href="mean.html"> MEAN Stack </a>
+                                              <a href="angular.html">AngularJS & ReactJS </a>
+                                              <a href="node.html"> Node.JS Development </a>
+                                              <a href="react.html">React Native Development </a> -->
+
+                                      </div>
+                                  </div>
+
+
+                              </div>
+                          </div>
+
+
+
+                          <li class="nav-item">
+                              <a class="scroll-to nav-link m-3" onclick="location.href='company.html'" href="" style="color:
+                                      white" id="dropdownMegaMenuButton2" data-toggle="dropdown" aria-haspopup="true"
+                                  aria-expanded="false">
+                                  <b>Company</b></a>
+                              <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <div class="row m-0">
+                                      <div class="col-md-4 p-4  ">
+                                          <p class="text-primary text--cap border-bottom-primary d-inline-block">
+                                              <a href="" class="text-primary text--cap border-bottom-primary">
+                                                  <b>ABOUT US</b></a>
+                                          </p>
+
+                                          <div class="menu-icon-grid  ">
+
+                                              <a href="">Factsheet </a>
+                                              <a href=""> About Brainvire </a>
+                                              <a href="">History </a>
+                                              <a href="">Executive Leadership </a>
+                                              <a href="">Core Values </a>
+                                              <a href="">Life @ VSS</a>
+
+
+                                          </div>
+                                      </div>
+
+                                      <div class="col-md-4 p-4  ">
+                                          <p class="text-primary text--cap border-bottom-primary d-inline-block">
+                                              <a href="" class="text-primary text--cap border-bottom-primary">
+                                                  <b>CLIENTS </b></a>
+                                          </p>
+
+                                          <div class="menu-icon-grid  ">
+
+                                              <a href="">Our Clients</a>
+                                              <a href="client-testimonial.html">Client Testimonials</a>
+                                              <a href="">Client’s Video Testimonials</a>
+                                              <a href="">Clutch Testimonials</a>
+
+
+                                          </div>
+                                      </div>
+
+                                      <div class="col-md-4 p-4  ">
+                                          <p class="text-primary text--cap border-bottom-primary d-inline-block">
+                                              <a href="" class="text-primary text--cap border-bottom-primary">
+                                                  <b>FEATURES IN</b></a>
+                                          </p>
+                                          <div class="menu-icon-grid  ">
+                                              <a href=""> <img src="/web/assets/menu-icon/Forbes.webp" alt=""></a>
+
+
+                                              <a href=""><img src="/web/assets/menu-icon/Forbes.webp" alt=""></a>
+
+                                              <a href=""><img src="/web/assets/menu-icon/Forbes.webp" alt=""></a>
+
+
+                                          </div>
+                                      </div>
+
+
+                                  </div>
+                              </div> -->
+                          </li>
+
+
+                          <li class="nav-item">
+                              <a class="scroll-to nav-link m-3" onclick="location.href='Industries.html'" href=""
+                                  style="color:
+                                      white" id="dropdownMegaMenuButton3" data-toggle="dropdown" aria-haspopup="true"
+                                  aria-expanded="false">
+                                  <b>Industries</b></a>
+                              <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                  <div class="row m-0">
+                                      <div class="col-md-4 p-4  ">
+                                          <p class="text-primary text--cap border-bottom-primary d-inline-block">
+                                              <a href="" class="text-primary text--cap border-bottom-primary">
+                                                  <b> CORE EXPERTISE</b></a>
+                                          </p>
+
+
+                                          <div class="menu-icon-grid  ">
+                                              <a href="">Retail </a>
+                                              <a href="">Real Estate</a>
+                                              <a href=""> Education</a>
+                                              <a href=""> Finance</a>
+                                              <a href=""> Healthcare</a>
+                                              <a href=""> Education</a>
+
+                                          </div>
+                                      </div>
+
+                                      <div class="col-md-4 p-4  ">
+                                          <p class="text-primary text--cap border-bottom-primary d-inline-block">
+                                              <a href="" class="text-primary text--cap border-bottom-primary">
+                                                  <b> DIGITAL ENABLEMENT </b></a>
+                                          </p>
+
+
+                                          <div class="menu-icon-grid  ">
+                                              <a href="">Media & Entertainment </a>
+                                              <a href="">Logistics </a>
+                                              <a href="">Advertising </a>
+                                              <a href="">Diamond and Jewelry </a>
+                                              <a href="">Automotive </a>
+
+
+                                          </div>
+                                      </div>
+
+                                      <div class="col-md-4 p-4  ">
+                                          <p class="text-primary text--cap border-bottom-primary d-inline-block">
+                                              <a href="" class="text-primary text--cap border-bottom-primary">
+                                                  <b> TECHNOLOGY EXPERTISE </b></a>
+                                          </p>
+
+
+                                          <div class="menu-icon-grid  ">
+                                              <a href="">Mobile and Wireless </a>
+                                              <a href=""> Cloud Services </a>
+                                              <a href=""> Gaming </a>
+                                              <a href=""> IOT </a>
+                                              <a href=""> Blockchain </a>
+                                              <a href=""> </a>
+
+
+                                          </div>
+                                      </div>
+
+
+                                  </div>
+                              </div> -->
+                          </li>
+
+
+                          <li class="nav-item">
+                              <a class="scroll-to nav-link m-3" href="" style="color: white"><b>Portfolio</b></a>
+                          </li>
+
+
+                          <li class="nav-item">
+                              <a class="scroll-to nav-link m-3" href="/app/contact/list" style="color: white"><b>Contact</b></a>
+                          </li>
+
+
+                          <div class="mt-1">
+                              <button class="btn btn-outline-danger orange-clr m-3"><b>Request A Quote</b></button>
+                          </div>
+
+
+                      </ul>
+
+
+                  </div>
+              </div>
+          </nav>
+
+      </div>
+  
+
+  
+  
+
+
+
+</head>
+
+</html>

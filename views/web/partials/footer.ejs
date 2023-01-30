@@ -1,0 +1,184 @@
+            <!-- Footer Start -->
+
+
+            <div class="flex-grow-1"></div>
+
+
+            <section class="footer_wrap" id="footer-wrap" style="background-color: #071C36">
+                <div class="container">
+                    <div class="row">
+
+
+                        <div data-aos="fade-up" class="col-md-3 mb-4">
+                            <div class="o-hidden text-left">
+
+
+                                <div class="">
+                                    <a href="">
+                                        <img src="/web/assets/logo/logo.png" width="80%" onclick="location.href='index.html'" alt="">
+                                    </a>
+
+                                    <div class="row">
+                                        <% footer.forEach(element => { %>
+                                         
+                                        
+                                        <div class="col-md-12 col-sm-6 mt-1">
+                                            <p class="text-white">
+                                                <%= element.about %> 
+                                            </p>
+                                        </div>
+
+                                        <% }) %>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- end of col -->
+                        <div data-aos="fade-up" class="col-md-3 mb-4">
+                            <div class="o-hidden text-left">
+
+
+                                <div class="">
+                                    <h4 class="card-title font-weight-bold text-white">Services</h4>
+                                    <div class="mb-5 lead text-white">
+                                        <ul class="list-inline">
+                                            <!-- <li class="mb-3 mt-3 text-white"><a href="#"
+                                                                                class="text-white">Marketing</a></li>
+                                            <li class="mb-3 mt-3 text-white"><a href="#" class="text-white">Campaign</a>
+                                            </li>
+                                            <li class="mb-3 mt-3 text-white"><a href="#" class="text-white"> Digital
+                                                Agency</a>
+                                            </li> -->
+                                           
+                                            <% service.forEach(element => { %>
+                                            <li class="mb-3 mt-3 text-white eva eva-checkmark-outline mr-2 text-warning"><a href="" class="text-white"> <b><%= element.category %></b></a></li>
+                                            <!-- <li class="mb-3 mt-3 text-white eva eva-checkmark-outline mr-2 text-warning"><a href="" class="text-white"> <b>MICROSOFT</b></a></li> -->
+                                            <% }) %>
+                                            <!-- <li class="mb-3 mt-3 text-white eva eva-checkmark-outline mr-2 text-warning"><a href="" class="text-white"> <b>MICROSOFT</b></a></li>
+                                            <li class="mb-3 mt-3 text-white eva eva-checkmark-outline mr-2 text-warning"><a href="" class="text-white"> <b>LAMP TECHNOLOGY</b></a></li>
+                                            <li class="mb-3 mt-3 text-white eva eva-checkmark-outline mr-2 text-warning"><a href="" class="text-white"> <b>CLOUD SERVICES</b></a></li>
+                                            <li class="mb-3 mt-3 text-white eva eva-checkmark-outline mr-2 text-warning"><a href="" class="text-white"> <b>MOBILE</b></a></li>
+                                            <li class="mb-3 mt-3 text-white eva eva-checkmark-outline mr-2 text-warning"><a href="" class="text-white"> <b> NODE.JS & MONGODB</b></a></li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- end of col -->
+                        <div data-aos="fade-up" class="col-md-3 mb-4 mb-lg-0 mb-md-0">
+                            <div class="o-hidden text-left">
+
+                                <div class="">
+                                    <h4 class="card-title font-weight-bold text-white">About SS</h4>
+                                    <div class="mb-5 lead">
+                                       
+                                        <ul class="list-inline">
+                                            <% for( let i = 0; i < about.length; i++ ) { %>
+                                            
+                                           
+                                            <li class="mb-3 text-white">
+                                                <i class="eva eva-checkmark-outline mr-2 text-warning"></i><%= about[i].title %> 
+                                            </li>
+                                            <% } %>
+                                           
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of col -->
+                        <div data-aos="fade-up" class="col-md-3 mb-lg-0 mb-md-0">
+                            <% footer.forEach(element => { %>
+                            <div class="o-hidden text-left">
+                                
+                                 
+                                
+                                <div class="">
+                                    <h4 class="card-title font-weight-bold text-white" style="margin-left: 25px;">Contact Info</h4>
+                                    <div class="address-wrap mb-3">
+
+                                        <ul class="list-group list-unstyled">
+                                            <li class="text-white"><i class="eva eva-pin-outline mr-2 text-white"></i><%= element.address %> 
+                                                
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="address-wrap mb-3">
+
+                                        <ul class="list-group list-unstyled">
+                                            <li class="text-white"><a href="mailto:Satyamsingh.cdac@gmail.com" style="color: white;">
+                                                <i class="eva eva-email-outline mr-2"></i><%= element.email %></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="address-wrap mb-3">
+
+                                        <ul class="list-group list-unstyled">
+                                            <li class=""><a href="tel: +918586066813" style="color: white;"><i class="eva eva-phone-call-outline mr-2"></i>
+                                                <%= element.mobile %></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    
+
+                                    <section class="social-wrap">
+
+                                        <div class="social-btns-wrap">
+
+                                            <a class="social-btn text-30 facebook ml-0" href="<%= element.facebook %>"><i class="eva eva-facebook"></i></a>
+
+
+                                            <a class="social-btn text-30 twitter" style="color: green;" href="<%= element.facebook %>"><i class="eva eva-twitter-outline"></i></a>
+
+                                            <a class="social-btn text-30 linkedin" href="<%= element.linkedin %>"><i class="eva eva-linkedin-outline"></i></a>
+                                        
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+
+                            <% }) %>
+                        </div>
+
+                        <!-- end of col -->
+                    </div>
+                </div>
+            </section>
+            <!-- end footer -->
+            <!-- end footer -->
+
+
+            <script type="text/javascript">
+                window.onload = function () {
+                    OpenBootstrapPopup();
+                };
+                function OpenBootstrapPopup() {
+                    $("#simpleModal").modal('show');
+                }
+            </script>
+            <!--=============== End app-Landing-wrap ================-->
+            <script src='/web/a076d05399.js' crossorigin='anonymous'></script>
+            
+            <script src="/web/assets/js/vendor/jquery-3.3.1.min.js"></script>
+            <script src="/web/assets/js/vendor/bootstrap.bundle.min.js"></script>
+            <script src="/web/assets/js/vendor/perfect-scrollbar.min.js"></script>
+            <script src="/web/assets/js/vendor/slick.min.js"></script>
+            <!-- <script src="/web/assets/js/es5/scroll.min.js"></script> -->
+            <script src="/web/assets/js/es5/slick.script.min.js"></script>
+            <script src="/web/assets/js/vendor/aos.js"></script>
+            <script src="/web/assets/js/es5/script.min.js"></script>
+
+
+            <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+      

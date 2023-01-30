@@ -1,0 +1,128 @@
+<%- include ('partials/header.ejs') %> 
+
+
+<section id="contacts-wrap" class="contact-form-wrap light-gray p-t-b-80">
+    <div class="container">
+        <div class="row">
+
+
+            <div data-aos="fade-right" class="form-wrap col-md-6 mb-4">
+                <div class="section-header mb-5">
+                    <h2 class="font-weight-bold mt-5 ">Get in Touch With Us !</h2>
+                    <p></p>
+
+                </div>
+                <!--                            <div *ngif="success" class="alert alert-success alert-dismissible fade show" role="alert"-->
+                <!--                                 [@animate]="{value:'*',params:{y:'-120px',opacity:'0',delay:'100ms', duration: '400ms'}}">-->
+                <!--                                <button type="button" class="close" (click)="success=false">-->
+                <!--                                    <span aria-hidden="true">&times;</span>-->
+                <!--                                </button>-->
+                <!--                                <strong>Your Message Sent succefully</strong>-->
+                <!--                            </div>-->
+
+
+                <form class="row form" id="add_form" role="form">
+                    <div class="form-group mb-4 col-md-6">
+                        <label for="">
+                            <i class="eva eva-person-outline"></i>
+                        </label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Your Name"
+                            required="">
+
+                    </div>
+                    <div class="form-group mb-4 col-md-6">
+                        <label for="">
+                            <i class="eva eva-email-outline"></i>
+                        </label>
+                        <input type="email" required="" name="email" class="form-control"
+                            placeholder="Your email" aria-describedby="helpId">
+
+                    </div>
+                    <div class="form-group mb-4 col-md-12">
+                        <label for="">
+                            <i class="eva eva-edit-2-outline"></i>
+                        </label>
+                        <input type="text" required="" name="subject" class="form-control"
+                            placeholder="Your subject here" aria-describedby="helpId">
+
+                    </div>
+
+                    <div class="form-group mb-4 col-md-12">
+
+                        <label for="">
+                            <i class="eva eva-edit-outline"></i>
+                        </label>
+                        <textarea class="form-control" placeholder="Your message here" required=""
+                            name="message" rows="5"></textarea>
+
+
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <button type="submit"
+                            class="btn btn-block half-button form-submit-button btn-large btn-gradient">
+                            Send
+                            message
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+
+            </div>
+            <div data-aos="fade-left" class="col-md-6 align-items-center">
+                <div class="right-contact-wrap ml-5">
+
+                    <img src="/web/assets/images/landing/svg/contact2.svg" class="img-responsive zoom-fade"
+                        alt="Image">
+
+                    <!-- <div class="address-wrap mb-4">-->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<%- include ('partials/footer.ejs') %> 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function getFormData($form) {
+      var unindexed_array = $form.serializeArray();
+      var indexed_array = {};
+  
+      $.map(unindexed_array, function (n, i) {
+        indexed_array[n["name"]] = n["value"];
+      });
+      return JSON.stringify(indexed_array);
+    }
+    var form = $("#add_form");
+    form.on("submit", addaboutUssubmitHandler);
+  
+    function addaboutUssubmitHandler(e) {
+      e.preventDefault();
+  
+      var formData = getFormData(form);
+      console.log(formData)
+  
+      // DO POST
+      $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        url: "/app/contact/add",
+        data: formData,
+      })
+        .done((res) => {
+         console.log(res);
+         window.location.reload();
+        })
+        .fail(function (xhr, status, error) {
+          console.log(xhr.responseText)
+        });
+    }
+  </script>

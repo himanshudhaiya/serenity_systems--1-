@@ -1,0 +1,200 @@
+<%- include('partials/header.ejs') %>
+
+<div class="main-content">
+  <section class="section">
+    <div class="section-body">
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-0">
+            <div class="card-body">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">All <span class="badge badge-white"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Draft <span class="badge badge-primary"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pending <span class="badge badge-primary"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h4>All Contact Us</h4>
+              <button class="btn btn-info ml-auto" data-toggle="modal" data-target=".bd-example-modal-xl">
+                Add New
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="float-right">
+              </div>
+              <div class="clearfix mb-3"></div>
+              <div>
+                <form id="edit_contactUs" class="mx-5">
+                  <input type="hidden" name="editId" id="editId" value="<%= contactUs._id %>">
+                  <div class="form-group">
+
+                    <div class="form-group">
+                      <label>Email</label>
+                      <input type="text" class="form-control" id="email" name="email" value="<%= contactUs.email %>" />
+                    </div>
+                    <div class="form-group">
+                      <label>Mobile</label>
+                      <input type="text" class="form-control" id="mobile" name="mobile"
+                        value="<%= contactUs.mobile %>" />
+                    </div>
+                    <div class="form-group">
+                      <label>Address</label>
+                      <input type="text" class="form-control" id="address" name="address"
+                        value="<%= contactUs.address %>" />
+                    </div>
+                    <div class="form-group">
+                      <label>Whatsapp</label>
+                      <input type="text" class="form-control" id="whatsapp" name="whatsapp"
+                        value="<%= contactUs.whatsapp %>" />
+                    </div>
+                    <div class="form-group">
+                      <label>Facebook</label>
+                      <input type="text" class="form-control" id="facebook" name="facebook"
+                        value="<%= contactUs.facebook %>" />
+                    </div>
+                    <div class="form-group">
+                      <label>Instagram</label>
+                      <input type="text" class="form-control" id="instagram" name="instagram"
+                        value="<%= contactUs.instagram %>" />
+                    </div>
+                    <div class="form-group">
+                      <label>Linkedin</label>
+                      <input type="text" class="form-control" id="linkedin" name="linkedin"
+                        value="<%= contactUs.linkedin %>" />
+                    </div>
+
+                    <div class="pull-right mt-3">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        close
+                      </button>
+                      <button type="submit" class="btn btn-info">Add</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>
+
+<%- include ('partials/footer.ejs')%>
+<!-- 
+<script>
+  function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return typeof sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+    return false;
+};
+    var editform = $("#edit_contactUs");
+    editform.on("submit", editSubmitHandler);
+  
+    function editSubmitHandler(e) {
+      e.preventDefault();
+  
+      var formData = getFormData(editform);
+        // formData.id = getUrlParameter('id');
+        formData = JSON.stringify(formData);
+      console.log(formData);
+  
+      // DO POST
+      $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        url: "/admin/contactus/edit",
+        formData :formData  ,
+      })
+        .done((res) => {
+          console.log("Course Edited successfully");
+        //   window.location.reload();
+        })
+        .fail(function (xhr, status, error) {
+          console.log(xhr.responseText);
+        });
+    }
+</script> -->
+
+<script>
+  var editform = $("#edit_contactUs");
+
+  editform.on("submit", addslidersubmitHandler);
+
+  function addslidersubmitHandler(e) {
+    e.preventDefault();
+
+    // PREPARE FORM DATA
+    var formData = getFormData(editform);
+      console.log(formData);
+
+    // DO POST
+    $.ajax({
+      type: "POST",
+      contentType: "application/json",
+      url: "/admin/contactUs/edit",
+      data: JSON.stringify(formData),
+    })
+    setTimeout(function (res) {
+          console.log("Form Successfully")
+          window.location.reload(1);
+        }, 1000)
+
+        .fail(function (xhr, status, error) {
+          console.log(xhr.responseText)
+        });
+  }
+</script>
+<!-- <script>
+  const form = $("edit_contactUs");
+
+  form.on("submit", submitHandler);
+
+  function submitHandler(e) {
+    e.preventDefault();
+
+    var formData = getFormData($("#edit_contactUs"));
+    formData.id = getUrlParameter("id");
+    formData = JSON.stringify(formData);
+      console.log(formData);
+
+    // DO POST
+    $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        url: "/admin/contactus/edit",
+        data: formData,
+      })
+      .done((res) => {
+        console.log(res)
+        // window.location.replace("/admin/contactus/list");
+      })
+      .fail(function (xhr, status, error) {
+        console.log(xhr.responseText);
+
+      });
+  }
+</script> -->
